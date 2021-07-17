@@ -1,7 +1,7 @@
 {
   "name": "parcel-plugin-marked-prismjs",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "Parcel plugin for easily integrating with prismjs plugins by custom marked renderer.",
   "main": "src/index.js",
   "scripts": {
     "test": ""
