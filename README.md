@@ -62,7 +62,7 @@ console.log((0, dev.success)()) // true
 
 `after`
 
-![line highlight](https://user-images.githubusercontent.com/35368511/126040055-4c492e10-8118-45b9-89b8-8a3fb4af76a4.png)
+<image src="https://user-images.githubusercontent.com/35368511/126040055-4c492e10-8118-45b9-89b8-8a3fb4af76a4.png" alt="line highlight" width="450"></image>
 
 <br>
 
@@ -80,7 +80,7 @@ console.log((0, dev.success)()) // true
 
 `after`
 
-![diff](https://user-images.githubusercontent.com/35368511/126040039-3958cb17-9ece-4b2b-9769-bc80e614d09f.png)
+<image src="https://user-images.githubusercontent.com/35368511/126040039-3958cb17-9ece-4b2b-9769-bc80e614d09f.png" alt="diff" width="450"></image>
 
 <br>
 
