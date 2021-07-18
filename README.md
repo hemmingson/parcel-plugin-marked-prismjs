@@ -5,7 +5,7 @@ Parcel plugin for easily integrating with prismjs plugins by custom marked rende
 ## How to use
 
 ```
-npm i -D parcel-bundler-marked-prismjs
+npm i -D parcel-plugin-marked-prismjs
 ```
 
 ## Features
@@ -18,13 +18,13 @@ support vscode extension `Bracket Pair Colorizer 2` like rainbow highlight
 
 ### 1. heading anchors
 
-`before`
+input:
 
 ```md
 ## Subtitle With Anchor
 ```
 
-`after`
+output:
 
 ```html
 <h2>
@@ -43,7 +43,7 @@ support vscode extension `Bracket Pair Colorizer 2` like rainbow highlight
 
 use `{}` for supporting code editor syntax highlight
 
-`before`
+input:
 
 ````md
 ```js{4,10}
@@ -60,7 +60,7 @@ console.log((0, dev.success)()) // true
 ```
 ````
 
-`after`
+output:
 
 <image src="https://user-images.githubusercontent.com/35368511/126040055-4c492e10-8118-45b9-89b8-8a3fb4af76a4.png" alt="line highlight" width="450"></image>
 
@@ -68,7 +68,7 @@ console.log((0, dev.success)()) // true
 
 ### 3. diff
 
-`before`
+input:
 
 ````md
 ```diff-js
@@ -78,7 +78,7 @@ console.log((0, dev.success)()) // true
 ```
 ````
 
-`after`
+output:
 
 <image src="https://user-images.githubusercontent.com/35368511/126040039-3958cb17-9ece-4b2b-9769-bc80e614d09f.png" alt="diff" width="450"></image>
 
