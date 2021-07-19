@@ -78,6 +78,8 @@ output:
 
 Besides, codespan ought to be styled by class `codespan`.
 
+## Tests coverage
+
 ```c
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
