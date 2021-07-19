@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel-plugin-marked-prismjs": "*"
+  }
+}

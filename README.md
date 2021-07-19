@@ -2,19 +2,17 @@
 
 Parcel plugin for easily integrating with prismjs plugins by custom marked renderer, feel free to fork this repository and make your own renderer for prismjs.
 
-## How to use
+## Installation
 
 ```
-npm i -D parcel-plugin-marked-prismjs
+npm i parcel-plugin-marked-prismjs -D
 ```
 
 ## Features
 
-### 0. match brackets
+### 0. match braces
 
 support vscode extension `Bracket Pair Colorizer 2` like rainbow highlight
-
-<br>
 
 ### 1. heading anchors
 
@@ -36,8 +34,6 @@ output:
   Subtitle With Anchor
 </h2>
 ```
-
-<br>
 
 ### 2. line highlight
 
@@ -62,9 +58,7 @@ console.log((0, dev.success)()) // true
 
 output:
 
-<image src="https://user-images.githubusercontent.com/35368511/126040055-4c492e10-8118-45b9-89b8-8a3fb4af76a4.png" alt="line highlight" width="450"></image>
-
-<br>
+![linehighlight](example/img/line-highlight.png)
 
 ### 3. diff
 
@@ -80,8 +74,23 @@ input:
 
 output:
 
-<image src="https://user-images.githubusercontent.com/35368511/126040039-3958cb17-9ece-4b2b-9769-bc80e614d09f.png" alt="diff" width="450"></image>
-
-<br>
+![diff](example/img/diff.png)
 
 Besides, codespan ought to be styled by class `codespan`.
+
+```c
+--------------|---------|----------|---------|---------|-------------------
+File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+--------------|---------|----------|---------|---------|-------------------
+All files     |   95.24 |       75 |   85.71 |      95 |
+ __test__     |     100 |      100 |     100 |     100 |
+  index.js    |     100 |      100 |     100 |     100 |
+ src          |   94.12 |       75 |   85.71 |   93.75 |
+  helper.js   |    87.5 |       50 |   66.67 |   85.71 | 13
+  renderer.js |     100 |    83.33 |     100 |     100 | 14
+--------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.892 s, estimated 1 s
+```

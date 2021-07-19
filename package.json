@@ -1,20 +1,21 @@
 {
   "name": "parcel-plugin-marked-prismjs",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Parcel plugin for easily integrating with prismjs plugins by custom marked renderer.",
   "main": "src/index.js",
   "scripts": {
-    "test": ""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hemmingson/parcel-plugin-marked-prismjs.git"
   },
   "keywords": [
-    "parcel",
     "markdown",
     "marked",
-    "prismjs"
+    "parcel",
+    "prismjs",
+    "parcel-plugin"
   ],
   "author": "hemmingson",
   "license": "ISC",
@@ -22,8 +23,13 @@
     "url": "https://github.com/hemmingson/parcel-plugin-marked-prismjs/issues"
   },
   "homepage": "https://github.com/hemmingson/parcel-plugin-marked-prismjs#readme",
+  "peerDependencies": {
+    "parcel-bundler": "1.x"
+  },
   "dependencies": {
-    "marked": "^2.1.3",
-    "parcel-bundler": "^1.12.5"
+    "marked": "^2.1.3"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }

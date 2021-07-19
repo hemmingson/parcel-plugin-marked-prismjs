@@ -1,28 +1,20 @@
-const marked = require('marked')
+const { Renderer } = require('marked')
 
-function escape(html) {
-  const replacements = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;',
-  }
+const { kebabize, escapeHtml } = require('./helper')
 
-  return /[&<>"']/.test(html)
-    ? html.replace(/[&<>"']/g, (c) => replacements[c])
-    : html
-}
-
-class Renderer extends marked.Renderer {
+class CustomRenderer extends Renderer {
   constructor(options) {
     super(options)
   }
 
   heading(text, level) {
-    const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-')
+    const escapedText = kebabize(text)
 
-    return `<h${level}><a name="${escapedText}" class="anchor" href="#${escapedText}"></a>${text}</h${level}>`
+    return `<h${level}>${
+      level === 1
+        ? ''
+        : `<a name="${escapedText}" class="anchor" href="#${escapedText}"></a>`
+    }${text}</h${level}>`
   }
 
   codespan(text) {
@@ -30,15 +22,14 @@ class Renderer extends marked.Renderer {
   }
 
   code(code, str) {
-    const configs = str.split('{')
-    const [lang, nums] = configs
+    const [lang, nums] = str.split('{')
 
     return `<pre ${nums ? 'data-line=' + nums.slice(0, -1) : ''}><code class="${
       this.options.langPrefix
-    }${lang} match-braces rainbow-braces diff-highlight">${escape(
-      code
-    )}</code></pre>`
+    }${lang} match-braces rainbow-braces ${
+      lang.includes('diff') ? 'diff-highlight' : ''
+    }">${escapeHtml(code)}</code></pre>`
   }
 }
 
-module.exports = new Renderer()
+module.exports = new CustomRenderer()
