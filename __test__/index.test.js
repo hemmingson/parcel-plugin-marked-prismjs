@@ -3,6 +3,7 @@
  */
 
 const htmlStr = require('./index')
+const { escapeHtml } = require('../src/helper')
 
 describe('dom tree creation...', () => {
   const root = document.createElement('div')
@@ -37,5 +38,11 @@ describe('dom tree creation...', () => {
     const classes = Array.from(res.classList)
 
     expect(classes).toContain('diff-highlight')
+  })
+
+  test('escape html', () => {
+    const res = ['&', '<', '>', '"', "'"].map(escapeHtml)
+
+    expect(res).toEqual(['&amp;', '&lt;', '&gt;', '&quot;', '&#39;'])
   })
 })

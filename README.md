@@ -84,15 +84,11 @@ Besides, codespan ought to be styled by class `codespan`.
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 --------------|---------|----------|---------|---------|-------------------
-All files     |   95.24 |       75 |   85.71 |      95 |
+All files     |     100 |     87.5 |     100 |     100 |
  __test__     |     100 |      100 |     100 |     100 |
   index.js    |     100 |      100 |     100 |     100 |
- src          |   94.12 |       75 |   85.71 |   93.75 |
-  helper.js   |    87.5 |       50 |   66.67 |   85.71 | 13
+ src          |     100 |     87.5 |     100 |     100 |
+  helper.js   |     100 |      100 |     100 |     100 |
   renderer.js |     100 |    83.33 |     100 |     100 | 14
 --------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
-Snapshots:   0 total
-Time:        0.892 s, estimated 1 s
 ```
