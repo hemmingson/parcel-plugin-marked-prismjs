@@ -78,7 +78,7 @@ output:
 
 Besides, codespan ought to be styled by class `codespan`.
 
-## Tests coverage
+## Test coverage
 
 ```c
 --------------|---------|----------|---------|---------|-------------------
