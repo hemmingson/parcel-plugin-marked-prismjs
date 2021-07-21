@@ -12,7 +12,7 @@ npm i parcel-plugin-marked-prismjs -D
 
 ### 0. match braces
 
-support vscode extension `Bracket Pair Colorizer 2` like rainbow highlight
+support vscode extension `Bracket Pair Colorizer` like rainbow highlight
 
 ### 1. heading anchors
 
