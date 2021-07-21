@@ -7,10 +7,10 @@ const htmlEscapes = {
   '"': '&quot;',
   "'": '&#39;',
 }
-const replacer = new RegExp(`[${Object.keys(htmlEscapes).join('')}]`, 'g')
+const htmlEscapesRe = new RegExp(`[${Object.keys(htmlEscapes).join('')}]`, 'g')
 const escapeHtml = (text) =>
-  new RegExp(replacer.source).test(text)
-    ? text.replace(replacer, (c) => htmlEscapes[c])
+  new RegExp(htmlEscapesRe.source).test(text)
+    ? text.replace(htmlEscapesRe, (c) => htmlEscapes[c])
     : text
 
 module.exports = {

@@ -8,6 +8,12 @@ Parcel plugin for easily integrating with prismjs plugins by custom marked rende
 npm i parcel-plugin-marked-prismjs -D
 ```
 
+or
+
+```
+yarn add parcel-plugin-marked-prismjs --dev
+```
+
 ## Features
 
 ### 0. match braces
@@ -58,7 +64,7 @@ console.log((0, dev.success)()) // true
 
 output:
 
-![linehighlight](example/img/line-highlight.png)
+![line highlight](example/img/line-highlight.png)
 
 ### 3. diff
 
@@ -80,7 +86,7 @@ Besides, codespan ought to be styled by class `codespan`.
 
 ## Test coverage
 
-```c
+```powershell
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 --------------|---------|----------|---------|---------|-------------------

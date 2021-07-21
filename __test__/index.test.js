@@ -2,8 +2,8 @@
  * @jest-environment jsdom
  */
 
-const htmlStr = require('./index')
 const { escapeHtml } = require('../src/helper')
+const htmlStr = require('./index')
 
 describe('dom tree creation...', () => {
   const root = document.createElement('div')
