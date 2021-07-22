@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - 14
 
-script: jest unit
+script: jest unit && codecov
