@@ -11,10 +11,13 @@ describe('dom tree creation...', () => {
   document.querySelector('body').appendChild(root)
 
   test('headings', () => {
-    const res = root.querySelector('h2')
-    const html = res.innerHTML
+    const h1 = root.querySelector('h1')
+    const h2 = root.querySelector('h2')
+    const html1 = h1.innerHTML
+    const html2 = h2.innerHTML
 
-    expect(html).toBe(
+    expect(html1).toBe('This is an h1 without any anchors')
+    expect(html2).toBe(
       '<a name="subtitle-with-anchor" class="anchor" href="#subtitle-with-anchor"></a>Subtitle With Anchor'
     )
   })

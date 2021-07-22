@@ -1,4 +1,4 @@
-# parcel-plugin-marked-prismjs [![Build Status](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs.svg?branch=main)](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs)
+# parcel-plugin-marked-prismjs [![Build Status](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs.svg?branch=main)](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs) [![codecov](https://codecov.io/gh/hemmingson/parcel-plugin-marked-prismjs/branch/main/graph/badge.svg?token=XIK6WMEIBD)](https://codecov.io/gh/hemmingson/parcel-plugin-marked-prismjs)
 
 Parcel plugin for easily integrating with prismjs plugins by custom marked renderer, feel free to fork this repository and make your own renderer for prismjs.
 
@@ -81,17 +81,3 @@ output:
 
 Besides, codespan ought to be styled by class `codespan`.
 
-## Test coverage
-
-```powershell
---------------|---------|----------|---------|---------|-------------------
-File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
---------------|---------|----------|---------|---------|-------------------
-All files     |     100 |     87.5 |     100 |     100 |
- __test__     |     100 |      100 |     100 |     100 |
-  index.js    |     100 |      100 |     100 |     100 |
- src          |     100 |     87.5 |     100 |     100 |
-  helper.js   |     100 |      100 |     100 |     100 |
-  renderer.js |     100 |    83.33 |     100 |     100 | 14
---------------|---------|----------|---------|---------|-------------------
-```
