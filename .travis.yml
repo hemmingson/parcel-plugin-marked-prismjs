@@ -2,4 +2,7 @@ language: node_js
 node_js:
   - 14
 
-script: jest unit && codecov
+script: jest unit
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
