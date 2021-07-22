@@ -1,16 +1,13 @@
-# parcel-plugin-marked-prismjs
+# parcel-plugin-marked-prismjs [![Build Status](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs.svg?branch=main)](https://travis-ci.com/hemmingson/parcel-plugin-marked-prismjs)
 
 Parcel plugin for easily integrating with prismjs plugins by custom marked renderer, feel free to fork this repository and make your own renderer for prismjs.
 
 ## Installation
 
-```
+```bash
 npm i parcel-plugin-marked-prismjs -D
-```
 
-or
-
-```
+# via yarn
 yarn add parcel-plugin-marked-prismjs --dev
 ```
 
