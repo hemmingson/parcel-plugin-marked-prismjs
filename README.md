@@ -2,7 +2,7 @@
 
 Parcel plugin for easily integrating with prismjs plugins by custom marked renderer, feel free to fork this repository and make your own renderer for prismjs.
 
-<img src="example/example.png" width="650" />
+<img src="example/vendor/example.png" width="650" />
 
 ## Installation
 
