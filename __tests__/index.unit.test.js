@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { escapeHtml } = require('../../src/helper')
+const { escapeHtml } = require('../src/helper')
 const htmlStr = require('./index')
 
 describe('dom tree creation...', () => {

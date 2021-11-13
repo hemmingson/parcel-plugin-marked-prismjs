@@ -1,6 +1,6 @@
 const marked = require('marked')
 
-const renderer = require('../../src/renderer')
+const renderer = require('../src/renderer')
 
 const source = `
 # This is an h1 without any anchors

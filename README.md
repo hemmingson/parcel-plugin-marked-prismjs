@@ -2,30 +2,30 @@
 
 Parcel plugin for easily integrating with prismjs plugins by custom marked renderer, feel free to fork this repository and make your own renderer for prismjs.
 
+<img src="example/img/example.png" width="650" />
+
 ## Installation
 
 ```bash
-npm i parcel-plugin-marked-prismjs -D
+npm i -D parcel-plugin-marked-prismjs
 
 # via yarn
-yarn add parcel-plugin-marked-prismjs --dev
+yarn add -D parcel-plugin-marked-prismjs
 ```
 
 ## Features
 
 ### 0. match braces
 
-support vscode extension `Bracket Pair Colorizer` like rainbow highlight
+Support vscode extension `Bracket Pair Colorizer` like rainbow highlight.
 
 ### 1. heading anchors
-
-input:
 
 ```md
 ## Subtitle With Anchor
 ```
 
-output:
+will transpile to:
 
 ```html
 <h2>
@@ -40,9 +40,7 @@ output:
 
 ### 2. line highlight
 
-use `{}` for supporting code editor syntax highlight
-
-input:
+Use `{}` for supporting code editor syntax highlight.
 
 ````md
 ```js{4,10}
@@ -59,13 +57,7 @@ console.log((0, dev.success)()) // true
 ```
 ````
 
-output:
-
-![line highlight](example/img/line-highlight.png)
-
-### 3. diff
-
-input:
+### 3. diff highlight
 
 ````md
 ```diff-js
@@ -75,9 +67,4 @@ input:
 ```
 ````
 
-output:
-
-![diff](example/img/diff.png)
-
-Besides, codespan ought to be styled by class `codespan`.
-
+Besides, codespan ought to be styled by class `.codespan`.
