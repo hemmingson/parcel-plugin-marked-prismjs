@@ -1,4 +1,4 @@
-import './vendor/prism.min.js'
-import md from './vendor/example.md'
+import './lib/prism.min.js'
+import md from './data.md'
 
-document.querySelector('#root').innerHTML = md
+document.querySelector('#app').innerHTML = md

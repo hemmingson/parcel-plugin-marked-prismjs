@@ -2,7 +2,7 @@ const marked = require('marked')
 
 const renderer = require('../src/renderer')
 
-const source = `
+const data = `
 # This is an h1 without any anchors
 
 ## Subtitle With Anchor
@@ -31,4 +31,4 @@ console.log((0, dev.success)()) // true
 \`\`\`
 `
 
-module.exports = marked(source, { renderer })
+module.exports = marked(data, { renderer })

@@ -4,6 +4,6 @@
   },
   "devDependencies": {
     "parcel-bundler": "1.x",
-    "parcel-plugin-marked-prismjs": "^1.0.3"
+    "parcel-plugin-marked-prismjs": "^2.0.0"
   }
 }
